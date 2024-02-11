@@ -3,40 +3,50 @@ body {
 }
 
 .boks {
-    padding: 2%;
-    margin: 2%;
+    padding: 5%;
+    margin: 10%;
     background-color: rgba(55, 63, 100, 0.65);
+    border-radius: 20px;
 }
 
 .boks_flex {
     display: flex;
     flex-direction: row;
+    
 }
 
 .footer {
     display: flex;
     flex-direction: row;
-    padding: 2%;
     background-color: rgba(55, 63, 100, 100);
+      justify-content: space-evenly;
+      align-items: center;
+      max-width: 100%;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: aliceblue;
-    border-radius: 2%;
+    position: absolute;
+      top: 50px;
+      left: 30px;
+      right: 30px;
+      background-color: aliceblue;
+      box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 60px;
+      border-radius: 20px;
+      z-index: 999;
+    
 }
 
 .menu_items {
-    border-radius: 2%;
+    border-radius: 20px;
     background-color: rgba(55, 63, 100, 100);
-    padding: 2%;
-    margin: 2%;
+    padding: 15px;
     list-style: none;
 }
-
 
 img {
     max-width: 100px;
@@ -45,3 +55,23 @@ img {
 .placeholder_hero {
     min-width: 100%;
 }
+
+a:link {
+    color: whitesmoke;
+  }
+  
+  a:visited {
+    color: rgb(156, 191, 194);
+  }
+  
+  a:hover {
+    color: rgb(92, 134, 146);
+  }
+  
+  a:active {
+    color: white;
+  }
+  
+  .footer_item {
+    max-width: 100%;
+  }
