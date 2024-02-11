@@ -29,7 +29,7 @@ body {
       top: 50px;
       left: 30px;
       right: 30px;
-      background-color: aliceblue;
+      background-color: rgb(255, 255, 255);
       box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
       padding: 10px;
       display: flex;
