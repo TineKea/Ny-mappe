@@ -1,0 +1,47 @@
+body {
+    background-color: honeydew;
+}
+
+.boks {
+    padding: 2%;
+    margin: 2%;
+    background-color: rgba(55, 63, 100, 0.65);
+}
+
+.boks_flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    background-color: rgba(55, 63, 100, 100);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-radius: 2%;
+}
+
+.menu_items {
+    border-radius: 2%;
+    background-color: rgba(55, 63, 100, 100);
+    padding: 2%;
+    margin: 2%;
+    list-style: none;
+}
+
+
+img {
+    max-width: 100px;
+}
+
+.placeholder_hero {
+    min-width: 100%;
+}
