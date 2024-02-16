@@ -1,49 +1,58 @@
 ---
-import Header from "../comp/header.astro"
-import Boks from "../comp/boks.astro"
+import Header from "../comp/header2.astro"
 import Footer from "../comp/footer.astro"
 import "../css/main.css"
+import Boks from "../comp/boks.astro" 
+import InfoContainer from "../comp/infocon.astro"
 ---
 
 <html lang="da">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/public/img/logo.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Crosbboks</title>
-		<link rel="stylesheet" href="stylesheet.css">
+		<title>Crossboks</title>
 	</head>
 
 	<body>
+		<div class="header_flex">
 <header>
      <Header />	
 </header>
+</div> 
 
 <main>
-         <div>
-<!--video hero her med nav på postion absolut-->
-        </div>
+	<div class="placeholder_hero">
+		<img src="/public/img/sticker-stor-smiley.jpg" alt="" class="placeholder_hero">
+	</div>
+	
+	<h1>fællesskab</h1>
 
-        <div>
+        <div class="boks_flex">
 
-           <div>
-			<Boks />
-		   </div>
-
-            <div>
-				<Boks />
-            </div>
-
-            <div>
-				<Boks />
-            </div>
-
-            <div>
-				<Boks />
-            </div>
-
-        </div>
+			<div>
+			 <Boks header="Trænings lokationer" text1="Ringsted: Bag ved Ringsted Sportcenter, ved de grønne græsområder." text2="Glumsø: Ved Susåskolen. Onsdag morgen ved rundkørsel/Haletudsen"
+			 text3="Sorø: Ved Sorø Hallen"/>
+			</div>
+ 
+			 <div>
+				 <Boks header="Crossboks" text1="I CrossBoks laver vi udendørs holdtræning hele året rundt, hvor alle kan være med - uanset køn, vægt og hvilken form man er i. "/>
+			 </div>
+ 
+			 <div>
+				 <Boks header="Medlemsskab" text1="Vi tilbyder altid GRATIS prøvetime hos os, så du kan se om vores træning er noget for dig."
+				 
+				 text2="Som medlem kan du træne ubegrænset på alle ugens hold og er medlemskab ikke noget for dig, kan du betale drop in pr gang du træner. "/>
+			 </div>
+ 
+			 <div>
+				 <Boks header="Fællesskab" text1="Hos os bliver du en del af et fællesskab, hvor vi motiverer hinanden og hvor der er plads til grin og sjov."
+				 text2= " Vores fællesskab er meget mere end træning!"/>
+			 </div>
+ 
+		 </div>
+		
 </main>
 
 <footer>
@@ -52,5 +61,4 @@ import "../css/main.css"
 
 </body>
 </html>
-	</body>
-</html>
+
